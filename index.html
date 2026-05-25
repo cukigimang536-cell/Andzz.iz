@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andika Novriansyah | High-Tech Quantum Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700;800&family=Space+Grotesk:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap');
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .font-mono-tech {
+            font-family: 'Fira Code', monospace;
+        }
+        .font-headline {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* TECH & SCIFI ANIMATIONS */
+        @keyframes tech-pulse {
+            0%, 100% { opacity: 0.2; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(1.03); }
+        }
+        @keyframes float-subtle {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-8px) rotate(0.5deg); }
+        }
+        @keyframes scanline {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(100%); }
+        }
+
+        /* TYPEWRITER PERFECT ALIGNMENT */
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        @keyframes blink {
+            from, to { border-color: transparent }
+            50% { border-color: #00f0ff; }
+        }
+
+        .animate-tech-pulse { animation: tech-pulse 6s ease-in-out infinite; }
+        .animate-float-premium { animation: float-subtle 5s ease-in-out infinite; }
+        
+        /* High-Tech Circuit Matrix Grid */
+        .cyber-grid {
+            background-size: 30px 30px;
+            background-image: linear-gradient(to right, rgba(0, 240, 255, 0.02) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(0, 240, 255, 0.02) 1px, transparent 1px);
+        }
+
+        /* Electric Cyan Tech Glow */
+        .neon-glow-cyan {
+            box-shadow: 0 0 25px -3px rgba(0, 240, 255, 0.3);
+        }
+        .neon-text-glow {
+            text-shadow: 0 0 8px rgba(0, 240, 255, 0.6);
+        }
+
+        /* Typewriter Spacing Fix */
+        .typewriter-container {
+            display: inline-flex;
+            max-width: 100%;
+        }
+        .typewriter-text {
+            overflow: hidden;
+            border-right: 3px solid #00f0ff;
+            white-space: nowrap;
+            display: inline-block;
+            width: 0;
+            animation: typing 2.5s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards, blink 0.8s step-end infinite;
+        }
+
+        /* HEADLINE NAV LINK GLOW */
+        .headline-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .headline-link::before {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: #00f0ff;
+            box-shadow: 0 0 10px #00f0ff;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        .headline-link:hover::before {
+            width: 80%;
+        }
+    </style>
+</head>
+<body class="bg-[#02040a] text-slate-300 antialiased selection:bg-[#00f0ff] selection:text-black overflow-x-hidden">
+
+    <!-- BACKGROUND CIRKUIT DIGITAL & HIGH-TECH AMBIENT -->
+    <div class="fixed inset-0 pointer-events-none z-0">
+        <div class="absolute inset-0 cyber-grid opacity-90"></div>
+        <!-- Inti Energi Teknologi / Data Center Core Light -->
+        <div class="absolute top-[-15%] right-[-10%] w-[60vw] h-[60vw] bg-cyan-500/10 rounded-full blur-[130px] animate-tech-pulse"></div>
+        <div class="absolute bottom-[-15%] left-[-10%] w-[50vw] h-[50vw] bg-violet-600/5 rounded-full blur-[130px] animate-tech-pulse" style="animation-delay: -3s"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#00f0ff]/[0.015] to-transparent h-12 w-full opacity-50 pointer-events-none" style="animation: scanline 5s linear infinite;"></div>
+    </div>
+
+    <!-- HEADER / FLOATING TECH CAPSULE NAVIGATION WITH CYAN CAT ICONS -->
+    <div class="fixed top-6 left-0 w-full z-50 px-4 sm:px-8">
+        <nav class="max-w-5xl mx-auto bg-[#0b1329]/80 backdrop-blur-xl border border-[#00f0ff]/20 rounded-xl px-6 sm:px-8 h-16 flex items-center justify-between shadow-[0_0_30px_rgba(0,240,255,0.1)]">
+            
+            <!-- Logo Brand (Tech Style) -->
+            <a href="#home" class="flex items-center gap-2 group font-headline font-bold text-lg tracking-tight text-white">
+                <span class="w-2 h-2 rounded-none bg-[#00f0ff] animate-pulse"></span>
+                <span class="bg-gradient-to-r from-white via-slate-200 to-cyan-400 bg-clip-text text-transparent group-hover:text-[#00f0ff] transition-colors tracking-wide">ANDIKA</span>
+                <span class="font-mono-tech text-[10px] text-[#00f0ff] bg-[#00f0ff]/10 px-2 py-0.5 rounded-none border border-[#00f0ff]/30">SYS_OP</span>
+            </a>
+            
+            <!-- Desktop Headline Nav Items dengan Ikon Kucing Teknologi Neon -->
+            <div class="hidden md:flex items-center space-x-1 font-mono-tech text-[11px] tracking-wider font-medium">
+                <a href="#home" class="headline-link group flex items-center gap-1.5 px-3 py-1.5 text-slate-400 hover:text-white transition-colors">
+                    <i class="fa-solid fa-cat text-[10px] text-[#00f0ff] group-hover:text-cyan-300 transform transition-transform group-hover:-translate-y-1 neon-text-glow"></i>
+                    <span>/home</span>
+                </a>
+                <a href="#about" class="headline-link group flex items-center gap-1.5 px-3 py-1.5 text-slate-400 hover:text-white transition-colors">
+                    <i class="fa-solid fa-cat text-[10px] text-violet-400 group-hover:text-violet-300 transform transition-transform group-hover:-translate-y-1"></i>
+                    <span>/about</span>
+                </a>
+                <a href="#education" class="headline-link group flex items-center gap-1.5 px-3 py-1.5 text-slate-400 hover:text-white transition-colors">
+                    <i class="fa-solid fa-cat text-[10px] text-[#00f0ff] group-hover:text-cyan-300 transform transition-transform group-hover:-translate-y-1 neon-text-glow"></i>
+                    <span>/education</span>
+                </a>
+                <a href="#skill" class="headline-link group flex items-center gap-1.5 px-3 py-1.5 text-slate-400 hover:text-white transition-colors">
+                    <i class="fa-solid fa-cat text-[10px] text-violet-400 group-hover:text-violet-300 transform transition-transform group-hover:-translate-y-1"></i>
+                    <span>/skills</span>
+                </a>
+                <a href="#project" class="headline-link group flex items-center gap-1.5 px-3 py-1.5 text-slate-400 hover:text-white transition-colors">
+                    <i class="fa-solid fa-cat text-[10px] text-[#00f0ff] group-hover:text-cyan-300 transform transition-transform group-hover:-translate-y-1 neon-text-glow"></i>
+                    <span>/projects</span>
+                </a>
+                <a href="#contact" class="headline-link group flex items-center gap-1.5 px-3 py-1.5 text-slate-400 hover:text-[#00f0ff] transition-colors">
+                    <i class="fa-solid fa-cat text-[10px] text-[#00f0ff] transform transition-transform group-hover:-translate-y-1 neon-text-glow"></i>
+                    <span>/contact</span>
+                </a>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="hidden md:block">
+                <a href="#contact" class="font-mono-tech text-[10px] uppercase font-bold tracking-widest text-[#00f0ff] border border-[#00f0ff]/40 px-4 py-2 rounded-none bg-[#00f0ff]/5 hover:bg-[#00f0ff] hover:text-black transition-all shadow-sm">
+                    CONNECT_TERMINAL
+                </a>
+            </div>
+
+            <!-- Mobile Trigger -->
+            <button id="menu-btn" class="md:hidden text-xl text-slate-400 hover:text-[#00f0ff] transition-colors focus:outline-none">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu Dropdown dengan Ikon Kucing -->
+        <div id="mobile-menu" class="hidden max-w-sm mx-auto mt-3 bg-[#0b1329]/95 backdrop-blur-2xl border border-[#00f0ff]/20 rounded-xl p-6 space-y-4 font-mono-tech text-xs shadow-2xl">
+            <a href="#home" class="flex items-center gap-2 text-slate-400 hover:text-[#00f0ff] py-1 border-b border-white/[0.02]">
+                <i class="fa-solid fa-cat text-[#00f0ff]"></i> 01 // HOME
+            </a>
+            <a href="#about" class="flex items-center gap-2 text-slate-400 hover:text-[#00f0ff] py-1 border-b border-white/[0.02]">
+                <i class="fa-solid fa-cat text-violet-400"></i> 02 // ABOUT
+            </a>
+            <a href="#education" class="flex items-center gap-2 text-slate-400 hover:text-[#00f0ff] py-1 border-b border-white/[0.02]">
+                <i class="fa-solid fa-cat text-[#00f0ff]"></i> 03 // EDUCATION
+            </a>
+            <a href="#skill" class="flex items-center gap-2 text-slate-400 hover:text-[#00f0ff] py-1 border-b border-white/[0.02]">
+                <i class="fa-solid fa-cat text-violet-400"></i> 04 // SKILLS
+            </a>
+            <a href="#project" class="flex items-center gap-2 text-slate-400 hover:text-[#00f0ff] py-1 border-b border-white/[0.02]">
+                <i class="fa-solid fa-cat text-[#00f0ff]"></i> 05 // PROJECTS
+            </a>
+            <a href="#contact" class="flex items-center gap-2 text-[#00f0ff] py-1 font-bold">
+                <i class="fa-solid fa-cat animate-bounce"></i> 06 // CONTACT_SESSION
+            </a>
+        </div>
+    </div>
+
+    <!-- 1. HERO / HOME SECTION -->
+    <section id="home" class="pt-32 pb-20 z-10">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-16 items-center w-full relative z-10">
+            
+            <div class="lg:col-span-7 text-center lg:text-left space-y-8" data-aos="fade-right" data-aos-duration="1200">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-none bg-[#00f0ff]/5 border border-[#00f0ff]/30 text-[#00f0ff] font-mono-tech text-[10px] uppercase tracking-widest mx-auto lg:mx-0 shadow-inner">
+                    <span class="w-1.5 h-1.5 rounded-none bg-[#00f0ff] animate-ping"></span> QUANTUM INFRASTRUCTURE SPECIALIST
+                </div>
+                
+                <h1 class="text-4xl sm:text-6xl font-headline font-extrabold text-white tracking-tight leading-[1.05]">
+                    <span class="block text-slate-500 text-sm font-mono-tech font-normal mb-3">&gt;_ NODE_INITIALIZATION: COMPLETED</span>
+                    <div class="typewriter-container">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-100 to-[#00f0ff] typewriter-text font-headline">Andika Novriansyah</span>
+                    </div>
+                </h1>
+                
+                <p class="text-base sm:text-lg text-slate-400 max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                    Mengintegrasikan arsitektur jaringan tingkat tinggi dengan sistem keamanan siber terenkripsi. Berdedikasi penuh pada ekosistem <span class="text-[#00f0ff] font-mono-tech font-medium bg-[#00f0ff]/5 px-1.5 py-0.5 rounded border border-[#00f0ff]/20">Teknik Jaringan Komputer & Telekomunikasi</span>.
+                </p>
+
+                <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start font-mono-tech text-xs font-bold tracking-wider">
+                    <a href="#contact" class="px-8 py-4 bg-[#00f0ff] text-black rounded-none hover:bg-cyan-400 transition-all text-center neon-glow-cyan shadow-lg">
+                        [ RUN_INFRA_SESSION ]
+                    </a>
+                    <a href="#" class="px-8 py-4 bg-[#0b1329] border border-[#00f0ff]/20 hover:border-[#00f0ff]/60 rounded-none flex items-center justify-center gap-3 transition-all group text-slate-300 hover:text-white">
+                        <i class="fa-solid fa-code-branch text-[#00f0ff] group-hover:scale-110 transition-transform"></i>
+                        <span>DOWNLOAD_MANIFEST.SH</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sisi Kanan: Frame Komputer Lab Kontrol Antarmuka -->
+            <div class="lg:col-span-5 flex justify-center relative" data-aos="fade-left" data-aos-duration="1200">
+                <div class="relative w-80 sm:w-85 h-[420px] animate-float-premium">
+                    <div class="absolute -inset-4 border border-[#00f0ff]/10 rounded-none animate-pulse pointer-events-none"></div>
+                    
+                    <div class="absolute inset-0 bg-[#0b1329]/90 rounded-none border-2 border-[#00f0ff]/30 p-4 shadow-2xl neon-glow-cyan backdrop-blur-md">
+                        <div class="flex items-center justify-between pb-3 mb-3 border-b border-[#00f0ff]/10 text-[10px] font-mono-tech text-slate-500">
+                            <div class="flex space-x-1.5">
+                                <span class="w-2 h-2 rounded-none bg-red-500/40"></span>
+                                <span class="w-2 h-2 rounded-none bg-yellow-500/40"></span>
+                                <span class="w-2 h-2 rounded-none bg-[#00f0ff]/40"></span>
+                            </div>
+                            <span class="text-[#00f0ff]/70 font-bold">core_mainframe.sys</span>
+                        </div>
+                        <div class="w-full h-[340px] rounded-none overflow-hidden relative group border border-white/5">
+                            <div class="absolute inset-0 bg-[#00f0ff]/5 mix-blend-color z-10 pointer-events-none"></div>
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=600" alt="Andika Novriansyah" class="w-full h-full object-cover filter contrast-125 brightness-75 saturate-50 transform group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute bottom-4 left-4 z-20 font-mono-tech text-[9px] text-[#00f0ff] bg-black/90 px-3 py-1.5 rounded-none border border-[#00f0ff]/30 backdrop-blur-sm">
+                                <span class="block">SECURE_IP: 10.240.88.1</span>
+                                <span class="block text-violet-400">ACCESS_LEVEL: ROOT_ADMIN</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. ABOUT SECTION -->
+    <section id="about" class="py-24 bg-[#050c18]/80 border-y border-[#00f0ff]/10">
+        <div class="max-w-6xl mx-auto px-6 w-full relative z-10" data-aos="fade-up">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <h2 class="text-xs font-bold tracking-widest text-[#00f0ff] uppercase font-mono-tech">// ARCHITECTURE_PHILOSOPHY</h2>
+                    <h3 class="text-3xl sm:text-4xl font-headline font-bold text-white tracking-tight">Menghubungkan Dunia Melalui Infrastruktur Jaringan Sempurna.</h3>
+                    <p class="text-slate-400 font-light leading-relaxed">
+                        Sebagai talenta profesional di bidang <strong class="text-slate-200 font-medium">Teknik Jaringan Komputer dan Telekomunikasi (TJKT)</strong>, visi saya adalah merancang, mengimplementasikan, dan mengamankan jalur transmisi data digital agar selalu berada dalam performa puncak tanpa hambatan.
+                    </p>
+                </div>
+                <div class="lg:col-span-5 bg-[#0b1329] p-6 rounded-none border border-[#00f0ff]/10 shadow-xl font-mono-tech text-xs space-y-4">
+                    <div class="flex items-center gap-2 text-violet-400 font-bold mb-2">
+                        <i class="fa-solid fa-microchip"></i> COMPUTE_LOGIC_PARAMETERS
+                    </div>
+                    <div class="divide-y divide-white/[0.03]">
+                        <div class="py-2.5 flex justify-between"><span class="text-slate-500">System Scalability</span><span class="text-[#00f0ff] font-bold">Elastic Grid Node</span></div>
+                        <div class="py-2.5 flex justify-between"><span class="text-slate-500">Pipeline Workflow</span><span class="text-slate-300">GitOps Cryptography</span></div>
+                        <div class="py-2.5 flex justify-between"><span class="text-slate-500">Security Architecture</span><span class="text-violet-400 font-bold">Zero-Trust Environment</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. EDUCATION & ORGANISASI SECTION -->
+    <section id="education" class="py-24">
+        <div class="max-w-5xl mx-auto px-6 w-full relative z-10" data-aos="fade-up">
+            <div class="text-center mb-16">
+                <p class="text-xs font-bold tracking-widest text-[#00f0ff] font-mono-tech uppercase">// SECTOR_DATALOGS</p>
+                <h2 class="text-3xl sm:text-4xl font-headline font-bold text-white mt-2">Pendidikan & Kepemimpinan</h2>
+            </div>
+            
+            <div class="relative border-l border-[#00f0ff]/20 ml-2 md:ml-32 space-y-12">
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-[6px] top-2 bg-[#02040a] border-2 border-[#00f0ff] w-3 h-3 rounded-none shadow-[0_0_8px_#00f0ff]"></div>
+                    <time class="absolute left-[-140px] top-1.5 hidden md:block text-xs font-mono-tech text-slate-500 font-bold">2023 - PRESENT</time>
+                    <div class="bg-[#0b1329]/50 p-6 rounded-none border border-white/[0.05] hover:border-[#00f0ff]/40 transition-all duration-300">
+                        <span class="text-[10px] font-mono-tech text-[#00f0ff] block mb-1">ACADEMIC_SECTOR_01</span>
+                        <h3 class="text-lg font-bold text-white">SMK Jurusan TJKT</h3>
+                        <p class="text-xs text-slate-400 font-mono-tech mt-0.5">Teknik Jaringan Komputer & Telekomunikasi</p>
+                        <p class="text-slate-400 text-sm font-light mt-3">Mendalami rekayasa sistem routing data, manajemen server berskala industri, keamanan nirkabel, dan analisis kerentanan jaringan telekomunikasi digital.</p>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-[6px] top-2 bg-[#02040a] border-2 border-violet-500 w-3 h-3 rounded-none shadow-[0_0_8px_#8b5cf6]"></div>
+                    <time class="absolute left-[-140px] top-1.5 hidden md:block text-xs font-mono-tech text-slate-500 font-bold">2024 - PRESENT</time>
+                    <div class="bg-[#0b1329]/50 p-6 rounded-none border border-white/[0.05] hover:border-violet-500/40 transition-all duration-300">
+                        <span class="text-[10px] font-mono-tech text-violet-400 block mb-1">LEADERSHIP_CORE_02</span>
+                        <h3 class="text-lg font-bold text-white">Ketua Rohis Miftahul Ilmi</h3>
+                        <p class="text-xs text-violet-400/80 font-mono-tech mt-0.5">SMKS YPPI Tualang</p>
+                        <p class="text-slate-400 text-sm font-light mt-3">Dipercaya memegang tongkat kepemimpinan organisasi keagamaan sekolah. Bertanggung jawab melatih koordinasi kerja tim, manajemen program kerja berkala, serta membangun integritas kepemimpinan rekan sejawat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SKILLS SECTION -->
+    <section id="skill" class="py-24 bg-[#050c18]/80 border-y border-[#00f0ff]/10">
+        <div class="max-w-6xl mx-auto px-6 w-full relative z-10" data-aos="fade-up">
+            <div class="text-center mb-16">
+                <p class="text-xs font-bold tracking-widest text-[#00f0ff] font-mono-tech uppercase">// TECH_STACK_MATRIX</p>
+                <h2 class="text-3xl sm:text-4xl font-headline font-bold text-white mt-2">Kompetensi Teknis</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6 font-mono-tech text-xs">
+                <div class="bg-[#0b1329] p-6 rounded-none border border-[#00f0ff]/10 hover:border-[#00f0ff]/30 transition-all">
+                    <div class="text-[#00f0ff] text-lg mb-4"><i class="fa-solid fa-network-wired"></i></div>
+                    <h3 class="text-sm font-bold text-white mb-2">Network Architecture</h3>
+                    <p class="text-slate-400 font-light leading-relaxed mb-4">Penguasaan penuh terhadap Cisco IOS, rute dinamis OSPF, alokasi VLAN korporat, dan penggelaran infrastruktur Fiber Optic.</p>
+                    <div class="h-1 bg-white/[0.05] rounded-none overflow-hidden"><div class="h-full bg-[#00f0ff]" style="width: 92%"></div></div>
+                </div>
+                <div class="bg-[#0b1329] p-6 rounded-none border border-white/[0.05] hover:border-violet-500/30 transition-all">
+                    <div class="text-violet-400 text-lg mb-4"><i class="fa-solid fa-server"></i></div>
+                    <h3 class="text-sm font-bold text-white mb-2">Server Administration</h3>
+                    <p class="text-slate-400 font-light leading-relaxed mb-4">Konfigurasi Linux OS (Debian/Ubuntu Server), virtualisasi infrastruktur internal, manajemen DNS Cluster, dan web server.</p>
+                    <div class="h-1 bg-white/[0.05] rounded-none overflow-hidden"><div class="h-full bg-violet-500" style="width: 85%"></div></div>
+                </div>
+                <div class="bg-[#0b1329] p-6 rounded-none border border-[#00f0ff]/10 hover:border-[#00f0ff]/30 transition-all">
+                    <div class="text-[#00f0ff] text-lg mb-4"><i class="fa-solid fa-code"></i></div>
+                    <h3 class="text-sm font-bold text-white mb-2">Automation / Scripting</h3>
+                    <p class="text-slate-400 font-light leading-relaxed mb-4">Implementasi kode Python dasar guna penulisan script otomasi konfigurasi massal mikrotik dan monitoring bot API.</p>
+                    <div class="h-1 bg-white/[0.05] rounded-none overflow-hidden"><div class="h-full bg-[#00f0ff]" style="width: 78%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PROJECT SECTION -->
+    <section id="project" class="py-24">
+        <div class="max-w-6xl mx-auto px-6 w-full relative z-10" data-aos="fade-up">
+            <div class="text-center mb-16">
+                <p class="text-xs font-bold tracking-widest text-[#00f0ff] font-mono-tech uppercase">// PRODUCTION_LOGS</p>
+                <h2 class="text-3xl sm:text-4xl font-headline font-bold text-white mt-2">Implementasi Proyek</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-[#0b1329]/50 border border-[#00f0ff]/10 rounded-none p-6 hover:border-[#00f0ff]/40 transition-all flex flex-col justify-between group">
+                    <div class="space-y-3">
+                        <span class="text-[10px] font-mono-tech text-[#00f0ff] uppercase tracking-widest">[ NET_BUILD ]</span>
+                        <h4 class="text-base font-bold text-white group-hover:text-[#00f0ff] transition-colors">Segregasi Jaringan Core Sekolah</h4>
+                        <p class="text-slate-400 text-xs font-light leading-relaxed">Merancang pembagian sub-jaringan inter-VLAN guna mengamankan sekaligus mendistribusikan lalu lintas data ribuan user aktif.</p>
+                    </div>
+                    <div class="text-[10px] font-mono-tech text-slate-500 pt-4 border-t border-white/[0.03] mt-4">
+                        MikroTik RouterOS / VLAN
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-[#0b1329]/50 border border-white/[0.05] rounded-none p-6 hover:border-violet-500/40 transition-all flex flex-col justify-between group">
+                    <div class="space-y-3">
+                        <span class="text-[10px] font-mono-tech text-violet-400 uppercase tracking-widest">[ SECURITY_WATCH ]</span>
+                        <h4 class="text-base font-bold text-white group-hover:text-violet-400 transition-colors">Python Watchdog Log System</h4>
+                        <p class="text-slate-400 text-xs font-light leading-relaxed">Pengembangan repositori skrip python terotomasi untuk memindai aktivitas log mencurigakan pada gerbang jaringan secara real-time.</p>
+                    </div>
+                    <div class="text-[10px] font-mono-tech text-slate-500 pt-4 border-t border-white/[0.03] mt-4">
+                        Python Automation / Telegram API
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-[#0b1329]/50 border border-[#00f0ff]/10 rounded-none p-6 hover:border-[#00f0ff]/40 transition-all flex flex-col justify-between group">
+                    <div class="space-y-3">
+                        <span class="text-[10px] font-mono-tech text-[#00f0ff] uppercase tracking-widest">[ SERVER_CONFIG ]</span>
+                        <h4 class="text-base font-bold text-white group-hover:text-[#00f0ff] transition-colors">Debian Secure Gateway Node</h4>
+                        <p class="text-slate-400 text-xs font-light leading-relaxed">Penyusunan sistem server proksi internal berbasis Debian Linux OS demi melakukan restriksi paket konten berbahaya.</p>
+                    </div>
+                    <div class="text-[10px] font-mono-tech text-slate-500 pt-4 border-t border-white/[0.03] mt-4">
+                        Linux Debian / Squid Proxy
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. CONTACT SECTION -->
+    <section id="contact" class="py-24 bg-[#050c18]/80 border-t border-[#00f0ff]/10">
+        <div class="max-w-6xl mx-auto px-6 w-full relative z-10" data-aos="fade-up">
+            <div class="grid lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5 space-y-4">
+                    <p class="text-xs font-bold tracking-widest text-[#00f0ff] font-mono-tech uppercase">// ENCRYPTED_STABLISHMENT</p>
+                    <h3 class="text-2xl sm:text-3xl font-headline font-bold text-white">Hubungi Terminal Saya.</h3>
+                    <p class="text-slate-400 font-light text-sm leading-relaxed">
+                        Pintu kolaborasi terbuka lebar untuk pengerjaan arsitektur topologi jaringan baru, audit keamanan sistem, atau integrasi automation server.
+                    </p>
+                    <div class="space-y-2 pt-4 font-mono-tech text-xs text-slate-400">
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-envelope text-[#00f0ff]"></i> andika.novriansyah@email.com</div>
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-violet-400"></i> Tualang, Riau, Indonesia</div>
+                    </div>
+                </div>
+                <div class="lg:col-span-7 bg-[#0b1329] p-6 sm:p-8 rounded-none border border-[#00f0ff]/20 shadow-xl">
+                    <form class="space-y-4 font-mono-tech text-xs" onsubmit="event.preventDefault(); alert('Packet dispatched.');">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <input type="text" placeholder="NAME_IDENTIFIER" required class="w-full bg-[#02040a] border border-[#00f0ff]/10 focus:border-[#00f0ff] rounded-none px-4 py-3.5 text-white focus:outline-none transition-all">
+                            <input type="email" placeholder="EMAIL_ADDRESS" required class="w-full bg-[#02040a] border border-[#00f0ff]/10 focus:border-[#00f0ff] rounded-none px-4 py-3.5 text-white focus:outline-none transition-all">
+                        </div>
+                        <input type="text" placeholder="SUBJECT_HEADER" required class="w-full bg-[#02040a] border border-[#00f0ff]/10 focus:border-[#00f0ff] rounded-none px-4 py-3.5 text-white focus:outline-none transition-all">
+                        <textarea rows="4" placeholder="MESSAGE_BODY_STREAM..." required class="w-full bg-[#02040a] border border-[#00f0ff]/10 focus:border-[#00f0ff] rounded-none px-4 py-3.5 text-white focus:outline-none transition-all"></textarea>
+                        <button type="submit" class="w-full py-4 bg-[#00f0ff] text-black font-bold uppercase tracking-widest rounded-none hover:bg-cyan-400 transition-all shadow-md neon-glow-cyan">
+                            DISPATCH_DATA_PACKET <i class="fa-solid fa-paper-plane ml-1"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#02040a] py-8 text-center text-[10px] text-slate-600 border-t border-white/[0.02] z-10 relative font-mono-tech">
+        <p>&copy; 2026 ANDIKA NOVRIANSYAH. ALL RIGHTS SECURED // QUANTUM TECH INFRASTRUCTURE.</p>
+    </footer>
+
+    <!-- AOS JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: false,
+            duration: 800,
+            mirror: true
+        });
+
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
